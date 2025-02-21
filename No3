@@ -1,0 +1,27 @@
+package tugas3.no3;
+
+import java.util.Scanner;
+
+public class Tugas3No3 {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("BERAPA LAMA SESEORANG BEKERJA?");
+        
+        System.out.println("Jam Masuk: ");
+        int masuk = input.nextInt();
+        
+        System.out.println("Jam Keluar: ");
+        int keluar = input.nextInt();
+        
+        int lamaKerja;
+        if(keluar >= masuk){
+            lamaKerja = keluar - masuk;
+        }else{
+            lamaKerja = (keluar + 12) - masuk;
+        }
+        System.out.println("Lama Bekerja "+lamaKerja+" Jam");
+    }
+    
+}
