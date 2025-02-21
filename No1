@@ -1,0 +1,30 @@
+package tugas3.no1;
+
+import java.util.Scanner;
+
+public class Tugas3No1 {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("APAKAH HURUF YANG ANDA MASUKKAN MEMILIKI URUTAN Konsonan-Vokal-Konsonan?");
+        System.out.println("AYO KITA PERIKSA!");
+
+        System.out.println("Masukkan huruf ke-1: ");
+        char huruf1 = input.next().charAt(0);
+        
+        System.out.println("Masukkan huruf ke-2: ");
+        char huruf2 = input.next().charAt(0);
+        
+        System.out.println("Masukkan huruf ke-3: ");
+        char huruf3 = input.next().charAt(0);
+        
+        String vokal = "aiueo";
+        
+        if(!vokal.contains(String.valueOf(huruf1)) && vokal.contains(String.valueOf(huruf2)) && !vokal.contains(String.valueOf(huruf3))){
+            System.out.println("Konsonan-Vokal-Konsonan");
+        }else{
+            System.out.println("Bukan Konsonan-Vokal-Konsonan");  
+        }
+    }
+}
